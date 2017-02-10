@@ -10,6 +10,10 @@ function init() {
   renderer = new THREE.WebGLRenderer( { antialias: true } );
   renderer.setPixelRatio( window.devicePixelRatio ? window.devicePixelRatio : 1 );
   //document.body.appendChild( renderer.domElement );
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+  renderer.setSize( width, height );
+  
 
   scene = new THREE.Scene();
 
@@ -40,6 +44,7 @@ function init() {
 
   camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 1, 10000 );
   camera.layers.enable(1);
+  camera.position.set( 0, 0, 0.1 );
   camera.lookAt(sphere.position);
 
 
