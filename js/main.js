@@ -9,7 +9,7 @@ function init() {
 
   renderer = new THREE.WebGLRenderer( { antialias: true } );
   renderer.setPixelRatio( window.devicePixelRatio ? window.devicePixelRatio : 1 );
-  document.body.appendChild( renderer.domElement );
+  //document.body.appendChild( renderer.domElement );
 
   scene = new THREE.Scene();
 
