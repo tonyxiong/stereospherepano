@@ -40,7 +40,8 @@ function init() {
   scene.add( sphereR );
 */
 
-  camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 1, 10000 );
+  //camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 1, 10000 );
+  camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.5, 10000 );
   camera.layers.enable(1);
   camera.position.set( 0, 0, 0.1 );
   camera.lookAt(sphere.position);
