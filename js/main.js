@@ -27,11 +27,13 @@ function init() {
 
   sphere = new THREE.Mesh( geometry, material );
   sphere.rotation.x += Math.PI;
+  sphere.applyMatrix( new THREE.Matrix4().makeScale( 1, 1, -1 ) );
   sphere.layers.set( 1 );
   scene.add( sphere );
 
   sphereR = new THREE.Mesh( geometry, material );
   sphereR.rotation.x += Math.PI;
+  sphereR.applyMatrix( new THREE.Matrix4().makeScale( 1, 1, -1 ) );
   sphereR.layers.set( 2 );
   scene.add( sphereR );
 
