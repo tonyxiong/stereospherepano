@@ -35,12 +35,13 @@ function init() {
   sphere.layers.set( 1 );
   scene.add( sphere );
 
+  /*
   sphereR = new THREE.Mesh( geometry, material );
   sphereR.rotation.x += Math.PI;
   sphereR.applyMatrix( new THREE.Matrix4().makeScale( 1, 1, -1 ) );
   sphereR.layers.set( 2 );
   scene.add( sphereR );
-
+*/
 
   camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 1, 10000 );
   camera.layers.enable(1);
