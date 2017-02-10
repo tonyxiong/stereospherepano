@@ -28,7 +28,7 @@ function init() {
 
   sphere = new THREE.Mesh( geometry, material );
   sphere.rotation.x += Math.PI;
-  sphere.applyMatrix( new THREE.Matrix4().makeScale( 1, 1, -1 ) );
+  //sphere.applyMatrix( new THREE.Matrix4().makeScale( 1, 1, -1 ) );
   sphere.layers.set( 1 );
   scene.add( sphere );
 
