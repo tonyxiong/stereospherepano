@@ -15,7 +15,7 @@ function init() {
 
   var geometry = new THREE.SphereGeometry( 1, 100, 100 );
 
-  var texture = new THREE.ImageUtils.TextureLoader( "res/2.jpg" );
+  var texture = new THREE.ImageUtils.loadTexture( "res/2.jpg" );
   texture.minFilter = THREE.LinearFilter;
   texture.flipY = false;
 
