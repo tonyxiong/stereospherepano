@@ -5,6 +5,17 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="viewmode" content="projection=stereo">
+		<script> 
+			window.onload=function(){ 
+			if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) { 
+			bodyTag = document.getElementsByTagName('body')[0]; 
+			bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px'; 
+			} 
+			setTimeout(function() { 
+			window.scrollTo(0, 1) 
+			}, 0); 
+			}; 
+		</script>
 		<style>
 			html, body {
 				background-color: #000;
